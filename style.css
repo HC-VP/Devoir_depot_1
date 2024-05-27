@@ -1,0 +1,106 @@
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header{
+    
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+
+.profile {    
+      
+    background-color: #782221;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    
+    text-align: center;
+    margin-bottom: 0;    
+
+}
+
+
+figure {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    
+    
+}
+
+img {
+    width: 65%;
+    height: 80%;
+    border-radius: 50%;
+    box-shadow: 0 0 30px blue,
+    10px 0 80px deepskyblue,
+    -15px 0 30px lightskyblue;
+    
+}
+
+.name {
+    font-family: "Lato", sans-serif;
+    font-weight: 400; 
+    font-style: normal;
+}
+
+.job{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+.name, .job {
+    color: white;
+    margin: 5px 0;
+    padding: 0;
+
+    
+}
+
+.contact{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c1d27;
+    padding: 10px;
+    margin-top: 0;
+    flex-direction: row;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+
+}
+
+.adress {
+    text-align: left;
+    flex-basis: 33%;
+
+}
+
+.email{
+    text-align: center;
+    display: flex;
+    flex-basis: 33%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.number {
+    text-align: right;
+    flex-basis: 33%;
+
+}

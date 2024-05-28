@@ -1,6 +1,14 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("../Devoir_depot_1/assets/Raleway/Raleway/Raleway-VariableFont_wght.ttf");
+    src: url("../Devoir_depot_1/assets/Raleway/Raleway/Raleway-Italic-VariableFont_wght.ttf");
+    src: url("../Devoir_depot_1/assets/Raleway/Raleway/static/Raleway-Bold.ttf")
+}
+
 body{
-    margin-left: 10%;
-    margin-right: 10%;
+    max-width: 1160px;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-top: 0;
     margin-bottom: 0;
     font-family: "Raleway", sans-serif;
@@ -8,6 +16,7 @@ body{
     border-right-style: solid;
     border-right-color: black;
 }
+
 
 header{
     display:flex;
@@ -33,6 +42,17 @@ header{
 
 }
 
+.hidden_1, .hidden_2, .hidden_3 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0, 0, 0, 0);
+    border: 0;
+}
+
 
 figure {
     width: 150px;
@@ -51,6 +71,12 @@ figure img {
     -15px 0 30px lightskyblue;
     
 }
+
+figure img:hover {
+    cursor: zoom-in;
+}
+
+
 
 .name {
     font-family: "Lato", sans-serif;
@@ -96,6 +122,16 @@ figure img {
     flex-basis: 33%;
 
 }
+.adress a, .number a, .email a {
+    color: white;
+    text-decoration: none;
+    
+}
+.adress a:hover, .number a:hover, .email a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 .email{
     text-align: center;
@@ -125,6 +161,7 @@ figure img {
     padding-left: 15px;
     padding-top: 15px;
     background-color: #782221;
+    
 
 
 }
@@ -136,11 +173,13 @@ figure img {
     padding-right: 15px;
     padding-top: 15px;
     background-color: white;
+    font-weight: 300;
 
 }
 
 .left-part h2, .right-part h2 {
     font-family: "Lato", sans-serif;
+    font-weight: 800;
     margin-block-end: 0px;
     margin-block-start: 0px;
     background-color: #dbc2a4;
@@ -154,7 +193,8 @@ figure img {
 
 .about p, .languages ul, .center-of-interest ul{
     color: white;    
-    padding: 0 15px;    
+    padding: 0 15px;
+    font-weight: 300;    
 }
 
 .about p {
@@ -181,6 +221,20 @@ figure img {
     width: 10px;
     background-color: #782221;
 
+}
+.right-part h2::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background-color: #782221;
+    transition: width 0.3s;
+}
+
+.right-part h2:hover::after {
+    width: 10px;
 }
 
 footer{
